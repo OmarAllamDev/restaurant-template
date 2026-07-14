@@ -31,15 +31,15 @@ A modern, responsive restaurant website template built with HTML, CSS, JavaScrip
     │
     └── images/
         ├── logo.jpg
-        ├── hero-image.png
+        ├── hero-image.jpg
         ├── about-image.jpg
         ├── menu-1.jpg
         ├── menu-2.jpg
         ├── menu-3.jpg
         ├── menu-4.jpg
-        ├── gallery-1.png
+        ├── gallery-1.jpg
         ├── gallery-2.jpg
-        ├── gallery-3.png
+        ├── gallery-3.jpg
         ├── gallery-4.jpg
         ├── gallery-5.jpg
         ├── client-1.jpg
@@ -112,12 +112,12 @@ assets/images
 
 |             Image             |        Recommended Aspect Ratio      |
 |-------------------------------|--------------------------------------|
-| logo.png                      |                 1:1                  |
-| hero-image.png                |                 1:1                  |
-| about-image.png               |                 5:4                  |
-| menu-1.png – menu-4.png       |                 1:1                  |
-| gallery-1.png – gallery-4.png |                 4:3                  |
-| client-1.png – client-3.png   |                 1:1                  |
+| logo.jpg                      |                 1:1                  |
+| hero-image.jpg                |                 1:1                  |
+| about-image.jpg               |                 5:4                  |
+| menu-1.jpg – menu-4.jpg       |                 1:1                  |
+| gallery-1.jpg – gallery-4.jpg |                 4:3                  |
+| client-1.jpg – client-3.jpg   |                 1:1                  |
 
 ## Technologies
 
