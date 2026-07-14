@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title -->
+        <title>Savoré | Authentic Italian Dining</title>
+
+        <!-- SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Experience authentic Italian cuisine at Savoré. Discover handcrafted dishes, elegant dining, fresh ingredients, and reserve your table online."
+        />
+        <meta name="author" content="Omar Allam" />
+        <meta
+            name="keywords"
+            content="restaurant, Italian restaurant, Savoré, fine dining, Italian cuisine, reservation, food, HTML, CSS, JavaScript, Bootstrap, restaurant website template"
+        />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/logo.jpg" />
+
+        <!-- Icons & CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Savoré | Authentic Italian Dining" />
+        <meta
+            property="og:description"
+            content="Experience authentic Italian cuisine at Savoré. Fresh ingredients, handcrafted dishes, and unforgettable dining moments."
+        />
+        <meta property="og:image" content="https://omarallamdev.github.io/restaurant-template/assets/images/og-image.jpg" />
+        <meta property="og:url" content="https://omarallamdev.github.io/restaurant-template/" />
+        <meta property="og:site_name" content="Savoré" />
+
+        <!-- Canonical -->
+        <link rel="canonical" href="https://omarallamdev.github.io/restaurant-template/" />
+    </head>
+    <body>
+        <!-- #region Navigation Bar -->
+        <nav id="nav" class="d-flex flex-row align-items-center justify-content-between">
+            <div id="title" class="d-flex flex-column align-items-center justify-content-center">
+                <h1 id="websiteName"><a href="#hero"></a></h1>
+                <p id="title-role">ITALIAN RESTAURANT</p>
+            </div>
+            <div id="nav-links" class="d-flex flex-row align-items-center justify-content-center gap-4">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reservation" class="nav-link">Reservation</a>
+            </div>
+            <div class="dropdown d-none" id="collapse-menu">
+                <button class="dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-list"></i></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#hero" class="dropdown-item">Home</a></li>
+                    <li><a href="#about" class="dropdown-item">About</a></li>
+                    <li><a href="#menu" class="dropdown-item">Menu</a></li>
+                    <li><a href="#gallery" class="dropdown-item">Gallery</a></li>
+                    <li><a href="#reservation" class="dropdown-item">Reservation</a></li>
+                </ul>
+            </div>
+            <div id="reserve" class="d-none d-lg-block">
+                <a href="#reservation" id="reserve-btn"><i class="bi bi-calendar-event"></i>Book a table</a>
+            </div>
+        </nav>
+        <!-- #endregion ----------------->
+
+        <!-- #region Hero Section -->
+        <section id="hero" class="d-flex flex-row align-items-center justify-content-center">
+            <div id="left-hero" class="h-100 d-flex flex-column align-items-start justify-content-center">
+                <p id="heroIntro" class="intro light-head"></p>
+                <h1 id="hero-title" class="light-head">Good Food <br />Great <span style="color: var(--primary)">Moments</span></h1>
+                <div><span class="divide"></span><i class="bi bi-leaf"></i></div>
+                <p id="heroDescription"></p>
+                <div class="d-flex flex-row align-items-center justify-content-start gap-3 flex-wrap">
+                    <a href="#menu" id="explore">Explore Menu <i class="bi bi-arrow-right"></i></a>
+                    <a href="#reservation" id="hero-reserve"><i class="bi bi-calendar-event"></i>Book a table</a>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center mt-4">
+                    <img src="assets/images/client-1.jpg" alt="Client Picture" class="hero-client" id="client1" />
+                    <img src="assets/images/client-2.jpg" alt="Client Picture" class="hero-client" id="client2" />
+                    <img src="assets/images/client-3.jpg" alt="Client Picture" class="hero-client" id="client3" />
+                    <div class="d-flex flex-column align-items-start justify-content-center">
+                        <p class="hero-rate">4.9/5 <i class="bi bi-star-fill ms-1"></i></p>
+                        <p class="hero-rate">From 1200+ happy customers</p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-hero" class="h-100 d-flex justify-content-end">
+                <img src="assets/images/hero-image.png" alt="Hero Image" id="hero-img" class="object-fit-cover" />
+            </div>
+        </section>
+        <!-- #endregion ----------------->
+
+        <!-- #region Wave Divider -->
+        <div class="wave" id="hero-about">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    fill="var(--dark-back)"
+                    d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,58.7C1120,53,1280,75,1360,85.3L1440,96L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+                ></path>
+            </svg>
+        </div>
+        <!-- #endregion ----------------->
+
+        <!-- #region About Section -->
+        <section id="about">
+            <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-3">
+                <p class="intro">Our Story</p>
+                <h1 id="about-head" class="dark-head">A Journey of <br />Passion and Taste</h1>
+                <div><span class="divide"></span><i class="bi bi-leaf"></i><span class="divide"></span></div>
+            </div>
+            <div class="d-flex flex-row align-items-start justify-content-center">
+                <div class="w-50 d-none d-lg-block">
+                    <img src="assets/images/about-image.jpg" alt="About Photo" />
+                </div>
+                <div
+                    class="w-100 w-lg-50 d-flex flex-column justify-content-start align-items-center align-items-lg-start"
+                    id="right-about"
+                >
+                    <p class="dark-head mb-4" id="aboutText1"></p>
+                    <p class="mb-4" id="aboutText2"></p>
+                    <div class="d-flex flex-row justify-content-start align-items-center w-75 gap-3 mb-4">
+                        <i class="about-icons bi bi-leaf d-flex justify-content-center align-items-center"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-start w-100">
+                            <p class="dark-head fw-medium" id="aboutFeatureTitle1"></p>
+                            <p id="aboutFeatureText1"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center w-75 gap-3 mb-4">
+                        <i class="about-icons bi bi-fork-knife d-flex justify-content-center align-items-center"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-start w-100">
+                            <p class="dark-head fw-medium" id="aboutFeatureTitle2"></p>
+                            <p id="aboutFeatureText2"></p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center w-75 gap-3 mb-4">
+                        <i class="about-icons bi bi-cup-hot d-flex justify-content-center align-items-center"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-start w-100">
+                            <p class="dark-head fw-medium" id="aboutFeatureTitle3"></p>
+                            <p id="aboutFeatureText3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region Wave Divider -->
+        <div class="wave" id="about-menu">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    fill="var(--light-back)"
+                    d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,58.7C1120,53,1280,75,1360,85.3L1440,96L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+                ></path>
+            </svg>
+        </div>
+        <!-- #endregion ----------------->
+
+        <!-- #region Menu Section -->
+        <main id="menu">
+            <div class="d-flex flex-column justify-content-center align-items-center w-100 mb-3">
+                <p class="intro">Our Menu</p>
+                <h1 id="menu-head" class="light-head">Chef`s Special</h1>
+                <div><span class="divide"></span><i class="bi bi-leaf"></i><span class="divide"></span></div>
+            </div>
+            <div id="menu-grid">
+                <article class="d-flex flex-column">
+                    <img src="assets/images/menu-1.jpg" alt="Menu Item1" />
+                    <div class="d-flex flex-column justify-content-between align-items-start gap-2 p-2">
+                        <p class="menu-name" id="menuTitle1"></p>
+                        <p class="menu-desc" id="menuDescription1"></p>
+                        <p class="menu-price" id="menuPrice1"></p>
+                    </div>
+                </article>
+                <article class="d-flex flex-column">
+                    <img src="assets/images/menu-2.jpg" alt="Menu Item1" />
+                    <div class="d-flex flex-column justify-content-between align-items-start gap-2 p-2">
+                        <p class="menu-name" id="menuTitle2"></p>
+                        <p class="menu-desc" id="menuDescription2"></p>
+                        <p class="menu-price" id="menuPrice2"></p>
+                    </div>
+                </article>
+                <article class="d-flex flex-column">
+                    <img src="assets/images/menu-3.jpg" alt="Menu Item1" />
+                    <div class="d-flex flex-column justify-content-between align-items-start gap-2 p-2">
+                        <p class="menu-name" id="menuTitle3"></p>
+                        <p class="menu-desc" id="menuDescription3"></p>
+                        <p class="menu-price" id="menuPrice3"></p>
+                    </div>
+                </article>
+                <article class="d-flex flex-column">
+                    <img src="assets/images/menu-4.jpg" alt="Menu Item1" />
+                    <div class="d-flex flex-column justify-content-between align-items-start gap-2 p-2">
+                        <p class="menu-name" id="menuTitle4"></p>
+                        <p class="menu-desc" id="menuDescription4"></p>
+                        <p class="menu-price" id="menuPrice4"></p>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <!-- #endregion -------------------->
+
+        <!-- #region Wave Divider -->
+        <div class="wave" id="menu-gallery">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    fill="var(--dark-back)"
+                    d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,58.7C1120,53,1280,75,1360,85.3L1440,96L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+                ></path>
+            </svg>
+        </div>
+        <!-- #endregion ----------------->
+
+        <!-- #region Gallery Section -->
+        <section id="gallery">
+            <div class="d-flex flex-column justify-content-center align-items-start w-100 mb-3">
+                <p class="intro">Gallery</p>
+                <h1 id="galleryTitle" class="dark-head"></h1>
+            </div>
+            <div id="gallery-grid">
+                <img src="assets/images/gallery-1.png" alt="Gallery Photo 1" />
+                <img src="assets/images/gallery-2.jpg" alt="Gallery Photo 2" />
+                <img src="assets/images/gallery-3.png" alt="Gallery Photo 3" />
+                <img src="assets/images/gallery-4.jpg" alt="Gallery Photo 4" />
+                <img src="assets/images/gallery-5.jpg" alt="Gallery Photo 5" />
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region Wave Divider -->
+        <div class="wave" id="gallery-reserve">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    fill="var(--light-back)"
+                    d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,58.7C1120,53,1280,75,1360,85.3L1440,96L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+                ></path>
+            </svg>
+        </div>
+        <!-- #endregion ----------------->
+
+        <!-- #region Resevation Section -->
+        <section id="reservation" class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start mb-3" id="left-reserve">
+                <p class="intro">Reservations</p>
+                <h1 class="light-head mb-3">Back Your <br />Table Today</h1>
+                <p class="mb-2">Reserve your table and enjoy an unforgettable dining experience.</p>
+                <div class="d-flex flex-row gap-2 mb-2">
+                    <i class="bi bi-telephone"></i>
+                    <p id="reservationPhone"></p>
+                </div>
+                <div class="d-flex flex-row gap-2">
+                    <i class="bi bi-clock"></i>
+                    <p id="reservationOpeningHours"></p>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center gap-3" id="right-reserve">
+                <div class="d-flex flex-row justify-content-center align-items-center gap-3 w-100">
+                    <input type="text" placeholder="Your Name" class="w-50" />
+                    <input type="email" placeholder="Your Email" class="w-50" />
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 w-100">
+                    <div class="d-flex flex-row justify-content-center align-items-center gap-3 w-100">
+                        <input type="tel" placeholder="Phone Number" class="w-sm-25 w-50" />
+                        <input type="date" class="w-sm-25 w-50" />
+                    </div>
+                    <div class="d-flex flex-row justify-content-center align-items-center gap-3 w-100">
+                        <input type="time" min="11:00" max="23:00" class="w-sm-25 w-50" />
+                        <select name="guests" id="guests" class="w-sm-25 w-50">
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8 Guests</option>
+                            <option value="9">9 Guests</option>
+                            <option value="10">10 Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="book-table">Book a Table <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region Footer -->
+        <footer id="footer" class="d-flex flex-column flex-lg-row justify-content-between w-100">
+            <div class="left-footer d-flex flex-column align-items-start justify-content-center w-25">
+                <h1 id="title-brand"><a href="#hero">SAVORÉ</a></h1>
+                <p id="title-role">ITALIAN RESTAURANT</p>
+                <p>Good food. Great moments. <br />See you at the table.</p>
+            </div>
+            <div class="right-footer d-flex flex-row gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <p class="footer-title">Quick Links</p>
+                    <a href="#hero" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#menu" class="footer-link">Menu</a>
+                    <a href="#gallery" class="footer-link">Gallery</a>
+                </div>
+                <div id="opening-hours" class="d-flex flex-column gap-2">
+                    <p class="footer-title">Opening Hours</p>
+                    <p class="footer-text" id="footerWeekdays"></p>
+                    <p class="footer-text" id="footerWeekend"></p>
+                </div>
+                <div id="contact-us" class="d-flex flex-column gap-2">
+                    <p class="footer-title">Contact Us</p>
+                    <p class="footer-text" id="footerEmail"><i class="bi bi-telephone me-3"></i></p>
+                    <p class="footer-text" id="footerPhone"><i class="bi bi-envelope me-3"></i></p>
+                    <p class="footer-text" id="footerLocation"><i class="bi bi-geo-alt me-3"></i></p>
+                </div>
+                <div class="h-100 d-flex flex-row align-items-end ms-3">
+                    <a href="#hero" id="back-to-top"
+                        ><i class="bi bi-arrow-up w-100 h-100 d-flex align-items-center justify-content-center"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+        <!-- #endregion -------------------->
+
+        <!-- #region Bootstrap Linking -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <!-- #endregion ----------------->
+
+        <!-- #region Scroll Animation -->
+        <script>
+            const sections = document.querySelectorAll("section, main, footer");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            navLinks.forEach((link) => {
+                                link.classList.remove("active");
+
+                                if (link.getAttribute("href") === "#" + entry.target.id) {
+                                    link.classList.add("active");
+                                }
+                            });
+                        }
+                    });
+                },
+                {
+                    rootMargin: "-90px 0px -50% 0px",
+                    threshold: 0.3,
+                },
+            );
+
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+        </script>
+        <!-- #endregion ----------------->
+
+        <!-- #region JS Text Apply -->
+        <script src="assets/js/text.js"></script>
+        <!-- #endregion -------------------->
+    </body>
+</html>
